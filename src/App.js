@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { MypPolarArea } from "./components/MypPolarArea";
+import { MyBar } from "./components/MyBar";
+import { MyLine } from "./components/MyLine";
+import { MyStacked } from "./components/MyStacked";
+import { MyArea } from "./components/MyArea";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container ">
+      <h3 className="text-center">
+        Chart.js charts wrapped with react-chartjs-2
+      </h3>
+      <MyLine />
+      <MyBar />
+      <MypPolarArea />
+      <MyStacked />
+      <MyArea />
     </div>
   );
 }
